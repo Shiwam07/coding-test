@@ -1,0 +1,36 @@
+@mixin primary() {
+  background-color: orange;
+  color: white;
+}
+@mixin secondary {
+  background-color: white;
+  color: orange;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  width: 70px;
+  height: 25px;
+  border-radius: 2px;
+  &-primary {
+    @include primary();
+    &:hover {
+      @include secondary();
+    }
+  }
+
+  &-secondary {
+    @include secondary();
+    &:hover {
+      @include primary();
+    }
+  }
+  &:disabled {
+    background-color: grey;
+    color: white;
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}

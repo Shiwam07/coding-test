@@ -1,0 +1,29 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  & > label {
+    color: #7c7e8d;
+  }
+  &-input {
+    display: flex;
+    position: relative;
+    & > * {
+      flex-grow: 1;
+    }
+    &-box {
+      border: 1px solid black;
+      height: 25px;
+    }
+    & .error-symbol {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-50%, -50%);
+      font-size: 15px;
+      color: red;
+    }
+    & .error {
+      border-color: red;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  &-contents {
+    position: relative;
+    overflow: scroll;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 80vw;
+    height: 100vh;
+    background-color: white;
+    &-heading {
+      color: navy;
+      font-weight: normal;
+    }
+    &-subHeading {
+      color: gray;
+    }
+    &-check {
+      color: green;
+      vertical-align: bottom;
+      font-size: 1.7rem;
+    }
+    &-input-label {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    & > span {
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+}

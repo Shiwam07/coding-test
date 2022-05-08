@@ -1,0 +1,15 @@
+.modalLabel {
+  &-info {
+    display: flex;
+    gap: 3rem;
+    &-label {
+      color: gray;
+      flex: 0.3;
+      text-align: right;
+    }
+    &-input {
+      flex: 0.7;
+      color: navy;
+    }
+  }
+}
